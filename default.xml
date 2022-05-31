@@ -8,13 +8,13 @@
            remote="elvees-github" revision="495d5e23974feb801c8b4b0662b89a1804b8a9ba"/>
 
   <project name="ddrinit" path="sources/ddrinit"
-           remote="elvees-github" revision="a8b95b2da7e755a61e0a481bbaba7ea909bdf891"/>
+           remote="elvees-github" revision="11bb2cec5ec5e63bb8bcb66ba5c00521490feb21"/>
 
   <project name="arm-trusted-firmware" path="sources/arm-trusted-firmware"
            remote="elvees-github" revision="fae73641e08216a956cecd7b0af9b1f6beaa6eca"/>
 
   <project name="u-boot" path="sources/u-boot"
-           remote="elvees-github" revision="409585691785f29a6b056911549b49952f2ba328"/>
+           remote="elvees-github" revision="6a981f06369fd39c529980da95e1d718a87323f4"/>
 
   <project name="mcom03-flash-tools" path="sources/mcom03-flash-tools"
            remote="elvees-github" revision="47723b95ac324b7ebe9a9a38a347475b3dafea0e"/>
