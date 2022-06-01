@@ -1,0 +1,24 @@
+# This is a rolling release, image build is not reproducible
+FROM quay.io/centos/centos:stream8
+
+LABEL vendor=RnD\ Center\ \"ELVEES\",\ JSC
+LABEL com.elvees.target-board=mcom03
+LABEL version="1.0"
+LABEL description="CentOS 8 based environment to build bootloader for MCom-03"
+
+RUN echo 'max_parallel_downloads=10' >> /etc/dnf/dnf.conf && \
+    echo 'install_weak_deps=false' >> /etc/dnf/dnf.conf && \
+    dnf install -y dnf-plugins-core epel-release && \
+    dnf install -y \
+        bc \
+        bison \
+        cmake \
+        flex \
+        gcc \
+        git \
+        make \
+        python38 \
+        python38-pip \
+        && \
+    dnf clean all && \
+    alternatives --set python /usr/bin/python3

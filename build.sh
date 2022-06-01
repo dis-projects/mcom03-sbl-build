@@ -84,6 +84,9 @@ function build_ddrinit()
     echo '----------------------'
     pushd sources/ddrinit
     set_env_mips
+    pip3 install pipenv --user
+    export PATH=~/.local/bin:$PATH
+    export LANG="en_US.UTF-8"
     pipenv install --dev
     pipenv run make elvmc03smarc_defconfig
     pipenv run make clean
