@@ -5,7 +5,7 @@
   <default sync-j="4"/>
 
   <project name="mcom03-sbl" path="sources/mcom03-sbl"
-           remote="elvees-github" revision="495d5e23974feb801c8b4b0662b89a1804b8a9ba"/>
+           remote="elvees-github" revision="99b473c982a3419e44ed1461c237ba9928692405"/>
 
   <project name="ddrinit" path="sources/ddrinit"
            remote="elvees-github" revision="11bb2cec5ec5e63bb8bcb66ba5c00521490feb21"/>
