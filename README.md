@@ -23,12 +23,14 @@
 
     ```bash
     wget https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
-    tar xzf gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz -C /opt/
+    tar -C /opt/ -xvf gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
     ```
 
     ```bash
-    wget TBD/toolchain-mipsel-elvees-elf32.tar.xz
-    tar xzf toolchain-mipsel-elvees-elf32.tar.xz -C /opt/
+    wget https://dist.elvees.com/mcom03/buildroot/2022.06/rockpi/images/aarch64-buildroot-linux-gnu_sdk-buildroot.tar.gz
+    tar -C /opt/ -xvzf aarch64-buildroot-linux-gnu_sdk-buildroot.tar.gz \
+        aarch64-buildroot-linux-gnu_sdk-buildroot/opt/toolchain-mipsel-elvees-elf32/ \
+        --strip-components=2
     ```
 
 4. Запустите сборку в контейнере
