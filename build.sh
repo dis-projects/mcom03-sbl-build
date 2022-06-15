@@ -132,7 +132,7 @@ function build_mcom03_sbl()
     pushd sources/mcom03-sbl
     unset_env
     mkdir -p build && cd build
-    cp ../link.ld .
+    ln -s ../link.ld link.ld
     cmake .. \
         -DCMAKE_TRY_COMPILE_TARGET_TYPE="STATIC_LIBRARY" \
         -DDDRINIT_PATH=../../ddrinit/src/ddrinit.bin \
