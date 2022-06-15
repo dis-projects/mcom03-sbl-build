@@ -32,16 +32,6 @@ function dl_src()
     bin/repo sync
 }
 
-function dl_gcc_arm()
-{
-    local GCC_ARM_VER
-    GCC_ARM_VER=$(echo $GCC_ARM | cut -d'-' -f 3-4)
-    local GCC_ARM_TAR="${GCC_ARM}.tar.xz"
-    curl -L "https://developer.arm.com/-/media/Files/downloads/gnu-a/${GCC_ARM_VER}/binrel/${GCC_ARM_TAR}" -o "${GCC_ARM_TAR}"
-    tar xf "${GCC_ARM_TAR}" -C /opt
-    rm "${GCC_ARM_TAR}"
-}
-
 function set_env_arm()
 {
     export ARCH=aarch64
