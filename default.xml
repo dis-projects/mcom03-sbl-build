@@ -5,16 +5,16 @@
   <default sync-j="4"/>
 
   <project name="mcom03-sbl" path="sources/mcom03-sbl"
-           remote="elvees-github" revision="99b473c982a3419e44ed1461c237ba9928692405"/>
+           remote="elvees-github" revision="986d27809dce806c63bf1793498562ebb86e6d4f"/>
 
   <project name="ddrinit" path="sources/ddrinit"
-           remote="elvees-github" revision="11bb2cec5ec5e63bb8bcb66ba5c00521490feb21"/>
+           remote="elvees-github" revision="f0509e87294e237c36f9778625d12ae5141df7d7"/>
 
   <project name="arm-trusted-firmware" path="sources/arm-trusted-firmware"
            remote="elvees-github" revision="fae73641e08216a956cecd7b0af9b1f6beaa6eca"/>
 
   <project name="u-boot" path="sources/u-boot"
-           remote="elvees-github" revision="6a981f06369fd39c529980da95e1d718a87323f4"/>
+           remote="elvees-github" revision="72a0c32d1152707f4f61e70dbb52ecc50ff29693"/>
 
   <project name="mcom03-flash-tools" path="sources/mcom03-flash-tools"
            remote="elvees-github" revision="47723b95ac324b7ebe9a9a38a347475b3dafea0e"/>
