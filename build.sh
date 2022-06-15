@@ -27,7 +27,7 @@ function dl_repo()
 
 function dl_src()
 {
-    bin/repo init -u https://github.com/dpetrov-rts/mcom03-sbl-build \
+    bin/repo init -u https://github.com/dis-projects/mcom03-sbl-build \
         -b master -m default.xml
     bin/repo sync
 }
