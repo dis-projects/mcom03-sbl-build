@@ -6,14 +6,15 @@ set -eu -o pipefail
 # Download GCC ARM64 toolchain from
 #   https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
 # Extract it somewhere to disk, e.g.
-#   tar -C /opt/ -xf gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
+#   tar -C /opt/ -xvf gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
 # Provide the full path here:
 GCC_ARM="/opt/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/"
 
-# Download buildroot sources for MCom-03 from
-#   https://dist.elvees.com/mcom03/buildroot/20220420/rockpi/mcom03-defconfig-src.tar.gz
-# Extract Elvees MIPS toolchain somewhere to disk, e.g.
-#   tar -C /opt/ -xzf buildroot/dl/toolchain-mipsel-elvees-elf32/MCom03-console-SDK.linux64.2022-01-17.tar.gz MCom03-SDK/gcc-mipsel-elf32_linux/
+# Download MCom-03 SDK from
+#   https://dist.elvees.com/mcom03/buildroot/2022.06/rockpi/images/aarch64-buildroot-linux-gnu_sdk-buildroot.tar.gz
+# Extract it somewhere to disk, e.g.
+#   tar -C /opt/ -xvzf aarch64-buildroot-linux-gnu_sdk-buildroot.tar.gz \
+#   aarch64-buildroot-linux-gnu_sdk-buildroot/opt/toolchain-mipsel-elvees-elf32/ --strip-components=2
 # and provide the full path here:
 GCC_MIPS="/opt/toolchain-mipsel-elvees-elf32/"
 
